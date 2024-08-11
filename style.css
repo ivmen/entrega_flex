@@ -24,6 +24,7 @@ nav{
     padding: 20px;
     height: 12,5svb;
     align-items: center;
+    flex-wrap: wrap;
 }
 nav > p{
     font-weight: 700;
@@ -34,7 +35,7 @@ nav > p{
     justify-content: space-evenly;
     width: 50%;
     list-style: none;
-
+    flex-wrap: wrap;
 }
 
 nav > ul > li > a {
@@ -42,19 +43,22 @@ nav > ul > li > a {
     font-weight: 600;
     font-size: 13px;
 }
+main{
+    max-height: 214px;
+    margin-bottom: 100px;
 
+}
 #hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 25svb;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .info{
     display: flex;
     width: 50%;
-    height: 24svb;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -69,6 +73,7 @@ nav > ul > li > a {
 .info > p{
     font-size: 15px;
     margin: 5px;
+    max-width: 300px;
 }
 
 .info > button{
@@ -91,56 +96,69 @@ nav > ul > li > a {
 
 #companies {
     display: flex;
-    height: 20svb;
-    padding: 10px;
+    margin: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 #companies > p {
     font-size: 15px;
-    height: 20%;
 }
 
 #companies > img {
     background-color: var(--rtc-primary-color);
+    object-fit: cover;
 }
 
 #testimonials {
     display: flex;
     flex-direction: column;
-    height: 25spv;
+    margin: 100px;
+}
+
+#testimonials > h2 {
+    font-size: 15px;
 }
 
 
 #testimony{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #testimony > div{
     display: flex;
     flex-direction: column;
     background-color: var(--rtc-primary-color);
-    justify-content: center;
     align-items: center;
+    max-width: 200px;
     
 }
 
 #testimony > div > img {
     height: 100px;
     width: 100px;
-    background-color: var(--rtc-primary-color);
 }
 
 footer{
+    bottom: 0;
     display: flex;
     justify-content: space-around;
     background-color: var(--rtc-primary-color);
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 footer > ul {
     list-style: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+footer > ul > li{
+    font-size: 10px;
 }
